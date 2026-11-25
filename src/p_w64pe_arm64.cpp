@@ -91,8 +91,8 @@ void PackW64PeArm64::buildLoader(const Filter *ft) {
     addLoader(M_IS_LZMA(ph.method)    ? "PECALLLZ"
               : M_IS_NRV2B(ph.method) ? "PECALL2B"
               : M_IS_NRV2D(ph.method) ? "PECALL2D"
-              : M_IS_NRV2E(ph.method) ? "PECALL2E"
-                                      : "UNKNOWN_COMPRESSION_METHOD");
+              : M_IS_NRV2E(ph.method) || M_IS_LZ0(ph.method) ? "PECALL2E"
+                                                             : "UNKNOWN_COMPRESSION_METHOD");
     addLoader("PEMAIN10");
     if (tmp_tlsindex)
         addLoader("PETLSHAK2");
@@ -109,8 +109,8 @@ void PackW64PeArm64::buildLoader(const Filter *ft) {
     addLoader(M_IS_LZMA(ph.method)    ? "LZMA_ELF00,LZMA_DEC20,LZMA_DEC30"
               : M_IS_NRV2B(ph.method) ? "NRV_HEAD,NRV2B"
               : M_IS_NRV2D(ph.method) ? "NRV_HEAD,NRV2D"
-              : M_IS_NRV2E(ph.method) ? "NRV_HEAD,NRV2E"
-                                      : "UNKNOWN_COMPRESSION_METHOD");
+              : M_IS_NRV2E(ph.method) || M_IS_LZ0(ph.method) ? "NRV_HEAD,NRV2E"
+                                                             : "UNKNOWN_COMPRESSION_METHOD");
     if (use_tls_callbacks)
         addLoader("PETLSC2");
     addLoader("PEFILTSYM");
