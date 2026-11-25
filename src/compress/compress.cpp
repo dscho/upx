@@ -144,6 +144,33 @@ int upx_decompress(const upx_bytep src, unsigned src_len, upx_bytep dst, unsigne
         cresult = nullptr;
 
     const unsigned orig_dst_len = *dst_len;
+
+    // EXPERIMENTAL: UPX_BENCH_DECOMPRESS=N reports the fastest of N decodes of each block
+    static int bench_reps = -1;
+    static bool in_bench = false;
+    if (bench_reps < 0) {
+        const char *e = getenv("UPX_BENCH_DECOMPRESS");
+        bench_reps = e ? atoi(e) : 0;
+    }
+    if (bench_reps > 0 && !in_bench && (dst >= src + src_len || src >= dst + orig_dst_len)) {
+        in_bench = true;
+        long long best = -1;
+        unsigned u_len = 0;
+        for (int i = 0; i < bench_reps; i++) {
+            u_len = orig_dst_len;
+            struct timespec t0, t1;
+            clock_gettime(CLOCK_MONOTONIC, &t0);
+            upx_decompress(src, src_len, dst, &u_len, method, cresult);
+            clock_gettime(CLOCK_MONOTONIC, &t1);
+            long long ns = (t1.tv_sec - t0.tv_sec) * 1000000000LL + (t1.tv_nsec - t0.tv_nsec);
+            if (best < 0 || ns < best)
+                best = ns;
+        }
+        in_bench = false;
+        fprintf(stderr, "UPX_BENCH method=%d c_len=%u u_len=%u ns=%lld\n", method, src_len, u_len,
+                best);
+    }
+
     if (__acc_cte(false)) {
     }
 #if (WITH_BZIP2)
