@@ -327,12 +327,20 @@ if(NOT UPX_CONFIG_DISABLE_C_STANDARD)
 endif()
 endif() # UPX_CONFIG_DISABLE_ZSTD
 
+# EXPERIMENTAL: lz0 has no runtime stub; LZ0_NO_SIMD only affects encoder speed
+add_library(upx_vendor_lz0 STATIC
+    vendor/lz0/lz0/lz0_cost.c vendor/lz0/lz0/lz0_find.c vendor/lz0/lz0/lz0_parse.c
+    vendor/lz0/lz0/lz0_emit.c vendor/lz0/lz0/lz0_decompress.c vendor/lz0/lz0/lz0_compress.c
+    vendor/lz0/lz0/lz0_ultra.c vendor/lz0/lz0/lz0_simd.c)
+set_property(TARGET upx_vendor_lz0 PROPERTY C_STANDARD 11)
+target_compile_definitions(upx_vendor_lz0 PRIVATE LZ0_NO_SIMD=1 _POSIX_C_SOURCE=200809L)
+
 upx_add_glob_files(upx_SOURCES "src/*.cpp" "src/[cfu]*/*.cpp")
 add_executable(upx ${upx_SOURCES})
 if(NOT UPX_CONFIG_DISABLE_CXX_STANDARD)
     set_property(TARGET upx PROPERTY CXX_STANDARD 17)
 endif()
-target_link_libraries(upx upx_vendor_ucl upx_vendor_zlib)
+target_link_libraries(upx upx_vendor_ucl upx_vendor_zlib upx_vendor_lz0)
 if(NOT UPX_CONFIG_DISABLE_BZIP2)
     target_link_libraries(upx upx_vendor_bzip2)
 endif()

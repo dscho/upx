@@ -111,6 +111,8 @@ int upx_compress(const upx_bytep src, unsigned src_len, upx_bytep dst, unsigned 
     else if (M_IS_NRV2B(method) || M_IS_NRV2D(method) || M_IS_NRV2E(method))
         r = upx_ucl_compress(src, src_len, dst, dst_len, cb, method, level, cconf, cresult);
 #endif
+    else if (M_IS_LZ0(method))
+        r = upx_lz0_compress(src, src_len, dst, dst_len, cb, method, level, cconf, cresult);
 #if (WITH_ZSTD)
     else if (M_IS_ZSTD(method))
         r = upx_zstd_compress(src, src_len, dst, dst_len, cb, method, level, cconf, cresult);
@@ -164,6 +166,8 @@ int upx_decompress(const upx_bytep src, unsigned src_len, upx_bytep dst, unsigne
     else if (M_IS_DEFLATE(method))
         r = upx_zlib_decompress(src, src_len, dst, dst_len, method, cresult);
 #endif
+    else if (M_IS_LZ0(method))
+        r = upx_lz0_decompress(src, src_len, dst, dst_len, method, cresult);
 #if (WITH_ZSTD)
     else if (M_IS_ZSTD(method))
         r = upx_zstd_decompress(src, src_len, dst, dst_len, method, cresult);
@@ -211,6 +215,8 @@ int upx_test_overlap(const upx_bytep buf, const upx_bytep tbuf, unsigned src_off
     else if (M_IS_NRV2B(method) || M_IS_NRV2D(method) || M_IS_NRV2E(method))
         r = upx_ucl_test_overlap(buf, tbuf, src_off, src_len, dst_len, method, cresult);
 #endif
+    else if (M_IS_LZ0(method))
+        r = upx_lz0_test_overlap(buf, tbuf, src_off, src_len, dst_len, method, cresult);
 #if (WITH_ZSTD)
     else if (M_IS_ZSTD(method))
         r = upx_zstd_test_overlap(buf, tbuf, src_off, src_len, dst_len, method, cresult);

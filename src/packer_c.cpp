@@ -52,7 +52,7 @@
 }
 
 /*static*/ bool Packer::isValidCompressionMethod(int m) noexcept {
-    return M_IS_LZMA(m) || M_IS_NRV2B(m) || M_IS_NRV2D(m) || M_IS_NRV2E(m);
+    return M_IS_LZMA(m) || M_IS_NRV2B(m) || M_IS_NRV2D(m) || M_IS_NRV2E(m) || M_IS_LZ0(m);
 }
 
 const int *Packer::getDefaultCompressionMethods_8(int method, int level, int small) const {
@@ -65,6 +65,7 @@ const int *Packer::getDefaultCompressionMethods_8(int method, int level, int sma
     static const int m_nrv2b[] = {M_NRV2B_8, M_END};
     static const int m_nrv2d[] = {M_NRV2D_8, M_END};
     static const int m_nrv2e[] = {M_NRV2E_8, M_END};
+    static const int m_lz0[] = {M_LZ0, M_END};
 
     if (method == M_ALL)
         return m_all;
@@ -77,6 +78,8 @@ const int *Packer::getDefaultCompressionMethods_8(int method, int level, int sma
         return m_nrv2d;
     if (M_IS_NRV2E(method))
         return m_nrv2e;
+    if (M_IS_LZ0(method))
+        return m_lz0;
     if (small < 0)
         small = file_size <= 512 * 1024;
     if (level == 1 || small)
@@ -92,6 +95,7 @@ const int *Packer::getDefaultCompressionMethods_le32(int method, int level, int 
     static const int m_nrv2b[] = {M_NRV2B_LE32, M_END};
     static const int m_nrv2d[] = {M_NRV2D_LE32, M_END};
     static const int m_nrv2e[] = {M_NRV2E_LE32, M_END};
+    static const int m_lz0[] = {M_LZ0, M_END};
 
     if (method == M_ALL)
         return m_all;
@@ -104,6 +108,8 @@ const int *Packer::getDefaultCompressionMethods_le32(int method, int level, int 
         return m_nrv2d;
     if (M_IS_NRV2E(method))
         return m_nrv2e;
+    if (M_IS_LZ0(method))
+        return m_lz0;
     if (small < 0)
         small = file_size <= 512 * 1024;
     if (level == 1 || small)

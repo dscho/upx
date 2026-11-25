@@ -464,6 +464,10 @@ static noinline int do_option(int optc, const char *arg) {
     case 724:
         opt->prefer_ucl = true;
         break;
+    case 725:
+        if (!set_method(M_LZ0, -1))
+            e_method(M_LZ0, opt->level);
+        break;
 
     // compression level
     case '1':
@@ -898,6 +902,7 @@ int main_get_options(int argc, char **argv) {
         {"no-lzma", 0x10, N, 722}, // disable all_methods_use_lzma
         {"prefer-nrv", 0x10, N, 723},
         {"prefer-ucl", 0x10, N, 724},
+        {"lz0", 0x10, N, 725},     // --lz0 (EXPERIMENTAL)
         // compression settings
         {"all-filters", 0x10, N, 523},
         {"all-methods", 0x10, N, 524},
@@ -1078,6 +1083,7 @@ void main_get_envoptions() {
         {"no-lzma", 0x10, N, 722}, // disable all_methods_use_lzma
         {"prefer-nrv", 0x10, N, 723},
         {"prefer-ucl", 0x10, N, 724},
+        {"lz0", 0x10, N, 725},     // --lz0 (EXPERIMENTAL)
 
         // win32/pe
         {"compress-exports", 2, N, 630},

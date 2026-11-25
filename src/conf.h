@@ -646,6 +646,7 @@ using upx::tribool;
 #define M_DEFLATE     15 // NOT YET USED
 #define M_ZSTD        16 // NOT YET USED
 #define M_BZIP2       17 // NOT YET USED
+#define M_LZ0         18 // EXPERIMENTAL: no runtime stub, packed files do not run
 // compression methods internal usage
 #define M_ALL         (-1)
 #define M_END         (-2)
@@ -661,6 +662,7 @@ using upx::tribool;
 #define M_IS_DEFLATE(x) ((x) == M_DEFLATE)
 #define M_IS_ZSTD(x)    ((x) == M_ZSTD)
 #define M_IS_BZIP2(x)   ((x) == M_BZIP2)
+#define M_IS_LZ0(x)     ((x) == M_LZ0)
 
 // filters internal usage
 #define FT_END         (-1)
