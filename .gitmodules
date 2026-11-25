@@ -33,3 +33,6 @@
     url = https://github.com/upx/upx-vendor-zstd.git
     branch = upx-vendor
     shallow = true
+[submodule "vendor/lz0"]
+    path = vendor/lz0
+    url = https://github.com/seb3773/lz0.git
