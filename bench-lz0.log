@@ -1,0 +1,101 @@
+file	method	orig	packed	ratio	pack_s	decode_MB/s
+    142312 ->     63848   44.86%   linux/amd64   ls.nrv2b
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+ls	nrv2b	142312	63848	44.86%	0.1	253
+    142312 ->     63784   44.82%   linux/amd64   ls.nrv2d
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+ls	nrv2d	142312	63784	44.82%	0.5	259
+    142312 ->     63464   44.59%   linux/amd64   ls.nrv2e
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+ls	nrv2e	142312	63464	44.59%	0.1	259
+    142312 ->     56924   40.00%   linux/amd64   ls.lzma
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+ls	lzma	142312	56924	40.00%	0.2	45
+    142312 ->     61504   43.22%   linux/amd64   ls.lz0
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+ls	lz0	142312	61504	43.22%	25.3	237
+   1446024 ->    660384   45.67%   linux/amd64   bash.nrv2b
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+bash	nrv2b	1446024	660384	45.67%	4.7	212
+   1446024 ->    652484   45.12%   linux/amd64   bash.nrv2d
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+bash	nrv2d	1446024	652484	45.12%	5.0	209
+   1446024 ->    648624   44.86%   linux/amd64   bash.nrv2e
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+bash	nrv2e	1446024	648624	44.86%	4.9	209
+   1446024 ->    545512   37.72%   linux/amd64   bash.lzma
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+bash	lzma	1446024	545512	37.72%	1.6	38
+   1446024 ->    618408   42.77%   linux/amd64   bash.lz0
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+bash	lz0	1446024	618408	42.77%	58.1	199
+   4640384 ->   2367220   51.01%   linux/amd64   git.nrv2b
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+git	nrv2b	4640384	2367220	51.01%	51.9	189
+   4640384 ->   2310964   49.80%   linux/amd64   git.nrv2d
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+git	nrv2d	4640384	2310964	49.80%	47.9	190
+   4640384 ->   2299184   49.55%   linux/amd64   git.nrv2e
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+git	nrv2e	4640384	2299184	49.55%	50.3	190
+   4640384 ->   1921728   41.41%   linux/amd64   git.lzma
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+git	lzma	4640384	1921728	41.41%	2.8	38
+   4640384 ->   2177572   46.93%   linux/amd64   git.lz0
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+git	lz0	4640384	2177572	46.93%	87.4	180
+   4130640 ->   2012436   48.72%   linux/amd64   vim.basic.nrv2b
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+vim.basic	nrv2b	4130640	2012436	48.72%	62.0	196
+   4130640 ->   1971236   47.72%   linux/amd64   vim.basic.nrv2d
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+vim.basic	nrv2d	4130640	1971236	47.72%	60.3	197
+   4130640 ->   1961200   47.48%   linux/amd64   vim.basic.nrv2e
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+vim.basic	nrv2e	4130640	1961200	47.48%	59.2	194
+   4130640 ->   1630608   39.48%   linux/amd64   vim.basic.lzma
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+vim.basic	lzma	4130640	1630608	39.48%	4.0	39
+   4130640 ->   1864820   45.15%   linux/amd64   vim.basic.lz0
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+vim.basic	lz0	4130640	1864820	45.15%	128.6	183
+   8920528 ->   3813324   42.75%   linux/amd64   gdb.nrv2b
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+gdb	nrv2b	8920528	3813324	42.75%	104.2	215
+   8920528 ->   3719532   41.70%   linux/amd64   gdb.nrv2d
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+gdb	nrv2d	8920528	3719532	41.70%	103.3	221
+   8920528 ->   3698344   41.46%   linux/amd64   gdb.nrv2e
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+gdb	nrv2e	8920528	3698344	41.46%	106.0	219
+   8920528 ->   3006364   33.70%   linux/amd64   gdb.lzma
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+gdb	lzma	8920528	3006364	33.70%	5.3	46
+   8920528 ->   3478144   38.99%   linux/amd64   gdb.lz0
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+gdb	lz0	8920528	3478144	38.99%	149.4	211

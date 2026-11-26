@@ -1,0 +1,96 @@
+file	method	orig	packed	ratio	pack_s	decode_MB/s
+  20685312 ->   9645568   46.63%   win64/arm64   liblldb.dll.nrv2b
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+liblldb.dll	nrv2b	20685312	9645568	46.63%	243.0	286
+  20685312 ->   9510400   45.98%   win64/arm64   liblldb.dll.nrv2d
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+liblldb.dll	nrv2d	20685312	9510400	45.98%	239.1	285
+  20685312 ->   9482752   45.84%   win64/arm64   liblldb.dll.nrv2e
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+liblldb.dll	nrv2e	20685312	9482752	45.84%	244.2	289
+  20685312 ->   8186880   39.58%   win64/arm64   liblldb.dll.lzma
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+liblldb.dll	lzma	20685312	8186880	39.58%	8.9	72
+  20685312 ->   9145856   44.21%   win64/arm64   liblldb.dll.lz0
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+liblldb.dll	lz0	20685312	9145856	44.21%	285.3	291
+  35042816 ->  14579200   41.60%   win64/arm64   libclang.dll.nrv2b
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+libclang.dll	nrv2b	35042816	14579200	41.60%	510.5	265
+  35042816 ->  14295552   40.79%   win64/arm64   libclang.dll.nrv2d
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+libclang.dll	nrv2d	35042816	14295552	40.79%	502.3	251
+  35042816 ->  14240256   40.64%   win64/arm64   libclang.dll.nrv2e
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+libclang.dll	nrv2e	35042816	14240256	40.64%	498.6	262
+  35042816 ->  11454464   32.69%   win64/arm64   libclang.dll.lzma
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+libclang.dll	lzma	35042816	11454464	32.69%	18.7	66
+  35042816 ->  13492224   38.50%   win64/arm64   libclang.dll.lz0
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+libclang.dll	lz0	35042816	13492224	38.50%	554.5	265
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+pack failed: libLLVM-23.dll nrv2b
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+pack failed: libLLVM-23.dll nrv2d
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+pack failed: libLLVM-23.dll nrv2e
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+pack failed: libLLVM-23.dll lzma
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+pack failed: libLLVM-23.dll lz0
+  61679104 ->  29163008   47.28%   win64/arm64   libclang-cpp.dll.nrv2b
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+libclang-cpp.dll	nrv2b	61679104	29163008	47.28%	838.9	293
+  61679104 ->  28753408   46.62%   win64/arm64   libclang-cpp.dll.nrv2d
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+libclang-cpp.dll	nrv2d	61679104	28753408	46.62%	829.0	292
+  61679104 ->  28672000   46.49%   win64/arm64   libclang-cpp.dll.nrv2e
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+libclang-cpp.dll	nrv2e	61679104	28672000	46.49%	741.6	296
+  61679104 ->  24471040   39.67%   win64/arm64   libclang-cpp.dll.lzma
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+libclang-cpp.dll	lzma	61679104	24471040	39.67%	30.3	76
+  61679104 ->  27489792   44.57%   win64/arm64   libclang-cpp.dll.lz0
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+libclang-cpp.dll	lz0	61679104	27489792	44.57%	2780.0	289
+  77778944 ->  35614208   45.79%   win64/arm64   rustc_driver-c4e8db708a545c90.dll.nrv2b
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+rustc_driver-c4e8db708a545c90.dll	nrv2b	77778944	35614208	45.79%	1582.4	220
+  77778944 ->  34724352   44.64%   win64/arm64   rustc_driver-c4e8db708a545c90.dll.nrv2d
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+rustc_driver-c4e8db708a545c90.dll	nrv2d	77778944	34724352	44.64%	1552.6	220
+  77778944 ->  34617344   44.51%   win64/arm64   rustc_driver-c4e8db708a545c90.dll.nrv2e
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+rustc_driver-c4e8db708a545c90.dll	nrv2e	77778944	34617344	44.51%	1539.5	219
+  77778944 ->  25928704   33.34%   win64/arm64   rustc_driver-c4e8db708a545c90.dll.lzma
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+rustc_driver-c4e8db708a545c90.dll	lzma	77778944	25928704	33.34%	57.5	54
+  77778944 ->  31567872   40.59%   win64/arm64   rustc_driver-c4e8db708a545c90.dll.lz0
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+rustc_driver-c4e8db708a545c90.dll	lz0	77778944	31567872	40.59%	2710.0	221

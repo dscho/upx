@@ -1,0 +1,21 @@
+file	method	orig	packed	ratio	pack_s	decode_MB/s
+ 149887488 ->  55969280   37.34%   win64/arm64   libLLVM-23.unpacked.dll.nrv2b
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+libLLVM-23.unpacked.dll	nrv2b	149887488	55969280	37.34%	1892.5	310
+ 149887488 ->  54980096   36.68%   win64/arm64   libLLVM-23.unpacked.dll.nrv2d
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+libLLVM-23.unpacked.dll	nrv2d	149887488	54980096	36.68%	1877.8	303
+ 149887488 ->  54731776   36.52%   win64/arm64   libLLVM-23.unpacked.dll.nrv2e
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+libLLVM-23.unpacked.dll	nrv2e	149887488	54731776	36.52%	1898.2	307
+ 149887488 ->  42046464   28.05%   win64/arm64   libLLVM-23.unpacked.dll.lzma
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+libLLVM-23.unpacked.dll	lzma	149887488	42046464	28.05%	91.5	79
+ 149887488 ->  50927104   33.98%   win64/arm64   libLLVM-23.unpacked.dll.lz0
+
+WARNING: this is an unstable beta version - use for testing only! Really.
+libLLVM-23.unpacked.dll	lz0	149887488	50927104	33.98%	4284.3	202
